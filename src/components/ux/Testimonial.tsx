@@ -81,7 +81,7 @@ const TestimonialSlider: React.FC<TestimonialSliderProps> = ({
           currentIndex = (currentIndex + 1) % initialTestimonials.length;
 
           // Reset posisi dengan immediate flag untuk menghindari flicker
-          await controls.set({ x: 0 }, { immediate: true });
+          await controls.set({ x: 0, transition: { duration: 0 } });
         } catch (error) {
           console.error("Animation error:", error);
         } finally {

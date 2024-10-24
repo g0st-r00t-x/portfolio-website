@@ -100,37 +100,37 @@ import {
      id: 1,
      title: "Web Development",
      description: "Custom web applications tailored to your needs",
-     icon: Code,
+     icon: (props: { size?: number }) => <Code size={props.size} />,
    },
    {
      id: 2,
      title: "UI/UX Design",
      description: "Intuitive and visually appealing user interfaces",
-     icon: Palette,
+     icon: (props: { size?: number }) => <Palette size={props.size} />,
    },
    {
      id: 3,
      title: "Mobile App Development",
      description: "Native and cross-platform mobile applications",
-     icon: Smartphone,
+     icon: (props: { size?: number }) => <Smartphone size={props.size} />,
    },
    {
      id: 4,
      title: "API Integration",
      description: "Seamless integration with third-party services",
-     icon: Globe,
+     icon: (props: { size?: number }) => <Globe size={props.size} />,
    },
    {
      id: 5,
      title: "Performance Optimization",
      description: "Boost your website's speed and efficiency",
-     icon: Zap,
+     icon: (props: { size?: number }) => <Zap size={props.size} />,
    },
    {
      id: 6,
      title: "Consultation",
      description: "Expert advice on your tech stack and architecture",
-     icon: MessageCircle,
+     icon: (props: { size?: number }) => <MessageCircle size={props.size} />,
    },
  ];
 

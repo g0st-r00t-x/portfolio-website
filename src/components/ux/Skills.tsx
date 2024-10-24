@@ -1,7 +1,7 @@
 // Skills.tsx
 import { motion } from "framer-motion";
 import { Skill } from "@/types";
-import { Progress } from "@/components/ui/progress";
+// import { Progress } from "@/components/ui/progress";
 
 interface SkillsProps {
   data: Skill[];
