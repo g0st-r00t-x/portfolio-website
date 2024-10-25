@@ -2,13 +2,20 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ChevronDown } from "lucide-react";
 import { PersonalInfo } from "@/types";
+import bgImage from "@/assets/bg-image.svg";
 
 interface HeroSectionProps {
   data: PersonalInfo;
 }
 
 const HeroSection: React.FC<HeroSectionProps> = ({ data }) => (
-  <section className="min-h-screen flex flex-col items-center justify-center text-center">
+  <section
+    className="min-h-screen flex flex-col items-center justify-center text-center bg-cover bg-center bg-no-repeat"
+    style={{
+      backgroundImage: `url(${bgImage})`,
+      backgroundSize: 'cover',
+    }}
+  >
     <motion.h1
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}

@@ -21,7 +21,7 @@ const ServiceCard = ({ service, index }: ServiceCardProps) => {
       className="bg-gray-700 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
     >
       <motion.div
-        className="w-16 h-16 mb-4 text-blue-400 mx-auto"
+        className="w-16 h-16 mb-4 text-blue-600 mx-auto"
         initial={{ scale: 0 }}
         animate={isInView ? { scale: 1, rotate: 360 } : { scale: 0 }}
         transition={{

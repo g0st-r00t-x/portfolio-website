@@ -16,7 +16,7 @@ export const Navigation: React.FC<NavigationProps> = ({
     : "hover:text-gray-300";
 
   return (
-    <div className={isMobile ? "md:hidden" : "hidden md:flex space-x-4"}>
+    <div className={isMobile ? "md:hidden" : "hidden md:flex gap-8"}>
       {links.map((link) => (
         <motion.a
           key={link}

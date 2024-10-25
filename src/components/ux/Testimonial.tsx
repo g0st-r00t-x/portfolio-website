@@ -121,7 +121,7 @@ const TestimonialSlider: React.FC<TestimonialSliderProps> = ({
         {displayedTestimonials.map((testimonial, index) => (
           <motion.div
             key={`${testimonial.id}-${index}`}
-            className="testimonial-card max-w-lg flex-shrink-0 px-4"
+            className="testimonial-card w-[440px] flex-shrink-0 px-4"
             style={{
               willChange: "transform",
               backfaceVisibility: "hidden",
